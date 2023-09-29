@@ -12,7 +12,7 @@ class App{
         this.cleaner = new Cleaner();   //je maakt een nieuwe cleaner aan , de oorspronlkelijke cleaner zit in een cleaner.js
         this.renderer = new Renderer(); //hier maak je een render aan
         this.api = new API();   //je maakt hier een nieuwe api aan, de api zelf zit in api.js
-        this.api.getData("encrypter/src/data/data.json").then((data) => {    //hier krijg je de data uit api.js terug
+        this.api.getData("/encrypter/src/data/data.json").then((data) => {    //hier krijg je de data uit api.js terug
         this.main = new Main(data, this);  //de mmain heeft data nodig en dat geef je dus ook aan de main door data tussen de ()  te typen
         }); 
     }
